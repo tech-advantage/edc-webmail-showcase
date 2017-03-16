@@ -1,0 +1,10 @@
+<div class="account-item"
+     *ngFor="let elementName of treeItem?.elements; let elementIndex = index"
+     [hidden]="treeItem?.collapsed"
+     [routerLink]="['/email', treeItem.name, elementIndex]"
+     (click)="selectElement(treeItem, elementName);$event.stopPropagation()"
+     [ngClass]="{'element-selected': isElementSelected(treeItem, elementName)}">
+  <i class="fa fa-inbox account-icon-inbox"></i>
+  <span>{{ elementName }}</span>
+  <i class="fa fa-refresh account-icon-refresh"></i>
+</div>

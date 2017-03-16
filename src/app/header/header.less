@@ -1,0 +1,42 @@
+@import "../../global/variables";
+
+:host {
+  top: 0;
+  position: fixed;
+  width: 100%;
+
+  .div-header {
+    display: flex;
+    color: white;
+    font-size: 18px;
+    font-weight: 700;
+    height: 60px;
+
+    .header-title {
+      padding: 15px 0 18px 30px;
+      width: 250px;
+      background-color: @appprimary;
+    }
+
+    .header-bar{
+      display: flex;
+      flex-grow: 1;
+      justify-content: space-between;
+      background-color: lighten(@appprimary, 30%);
+
+      .bar-icons{
+
+        padding-right: 10px;
+        padding-top: 5px;
+        margin-left: auto;
+
+        .bar-user-icon{
+          cursor: pointer;
+          padding: 5px 35px 5px 35px;
+          float: right;
+          font-size: 24px;
+        }
+      }
+    }
+  }
+}

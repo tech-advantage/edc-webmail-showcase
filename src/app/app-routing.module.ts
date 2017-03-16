@@ -1,0 +1,22 @@
+import { NgModule } from '@angular/core';
+import { Routes, RouterModule } from '@angular/router';
+import { InfoPageComponent } from './info-page/info-page.component';
+import { emailRoutes } from './email/email.routes';
+
+const routes: Routes = [
+  {
+    path: '',
+    children: [
+      ... emailRoutes,
+      { path: '',   redirectTo: '/heroes', pathMatch: 'full' },
+      { path: '**', component: InfoPageComponent}
+      ]
+  }
+];
+
+@NgModule({
+  imports: [RouterModule.forRoot(routes)],
+  exports: [RouterModule],
+  providers: []
+})
+export class AppRoutingModule { }

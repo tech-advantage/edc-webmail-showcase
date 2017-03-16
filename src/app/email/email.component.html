@@ -1,0 +1,40 @@
+<div>
+  <div class="email-tab">
+    <div class="tab-content">
+      <span class="tab-title">Message</span>
+      <edc-help class="help-component" [key]="'email'" [subKey]="'tab'"></edc-help>
+      <i class="fa fa-times tab-close-icon"></i>
+    </div>
+    <div class="tab-right-side"></div>
+  </div>
+  <div class="email-main">
+    <div class="email-header-group">
+      <div class="email-header">
+        <div class="email-header-item">
+          <span class="email-header-label">Subject: </span>
+          <span>{{ email.subject }}</span>
+        </div>
+        <div class="email-header-item">
+          <span class="email-header-label">From: </span>
+          <span *ngFor="let from of email.from; let lastFrom = last">{{ from }}{{lastFrom ? '' : '; '}}</span>
+        </div>
+        <div class="email-header-item">
+          <span class="email-header-label">Date: </span>
+          <span>{{ email.date }}</span>
+        </div>
+      </div>
+      <div class="email-icon-group">
+        <div class="email-icon-container">
+          <i class="fa fa-mail-reply email-action-icon"></i>
+        </div>
+        <div class="email-icon-container">
+          <i class="fa fa-mail-reply-all email-action-icon"></i>
+        </div>
+        <div class="email-icon-container">
+          <i class="fa fa-print email-action-icon"></i>
+        </div>
+      </div>
+    </div>
+    <div class="email-body"> {{ email.content }}</div>
+  </div>
+</div>

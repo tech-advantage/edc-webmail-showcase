@@ -1,10 +1,10 @@
 {
   "name": "edc-web-mail-ng2",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "license": "MIT",
   "scripts": {
     "ng": "ng",
-    "start": "ng serve --port 4201 --base-href /email/",
+    "start": "ng serve --port 4201 --proxy-config proxy.conf.json",
     "build": "ng build",
     "test": "ng test --single-run",
     "test-auto": "ng test",

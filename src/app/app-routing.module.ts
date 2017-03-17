@@ -8,7 +8,6 @@ const routes: Routes = [
     path: '',
     children: [
       ... emailRoutes,
-      { path: '',   redirectTo: '/heroes', pathMatch: 'full' },
       { path: '**', component: InfoPageComponent}
       ]
   }

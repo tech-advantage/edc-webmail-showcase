@@ -1,0 +1,11 @@
+<div class="account-container" *ngFor="let item of treeContent; let i = index" (click)="collapse(i)">
+  <div class="account-items">
+    <div class="account-title-content">
+      <i class="account-icon" [ngClass]="getTitleCaretIcon(i)"></i>
+      <i class="account-icon-folder" [ngClass]="getTitleFolderIcon(i)"></i>
+      <span>{{ item.name }}</span>
+    </div>
+    <edc-help [key]="'leftmenu'" [subKey]="'account'" [placement]="'bottom'" class="account-help" [dark]="true"></edc-help>
+  </div>
+  <app-tree-element [treeItem]="item" (selectedElement)="selectedElement($event)"></app-tree-element>
+</div>

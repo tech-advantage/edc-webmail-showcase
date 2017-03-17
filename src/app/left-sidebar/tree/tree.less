@@ -1,0 +1,41 @@
+:host {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  min-width: 250px;
+  user-select: none;
+
+  .account-container{
+    font-size: 15px;
+
+    .account-items {
+      display: flex;
+      justify-content: space-between;
+
+      .account-title-content{
+        color: white;
+        cursor: pointer;
+        padding-top: 15px;
+        padding-left: 15px;
+        padding-bottom: 10px;
+
+        .account-icon {
+          padding-right: 5px;
+        }
+
+        .account-icon-folder{
+          font-size: 14px;
+          color: sandybrown;
+        }
+
+        .account-item-label {
+          color: white;
+        }
+      }
+
+      .account-help {
+        padding-top: 15px;
+      }
+    }
+  }
+}

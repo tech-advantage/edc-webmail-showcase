@@ -23,7 +23,7 @@
     "@ng-bootstrap/ng-bootstrap": "^1.0.0-alpha.20",
     "bootstrap": "^4.0.0-alpha.6",
     "core-js": "^2.4.1",
-    "edc-popover-ng": "git+https://github.com/tech-advantage/edc-popover-ng#507c37f9969cac27da5671504b179d503aa1d474",
+    "edc-popover-ng": "^1.0.0",
     "font-awesome": "^4.7.0",
     "lodash": "^4.17.4",
     "rxjs": "^5.1.0",

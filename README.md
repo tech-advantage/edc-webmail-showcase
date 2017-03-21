@@ -1,45 +1,66 @@
-#edc-webmail-showcase
+# edc-webmail-showcase
 
 Web application example for edc integration
 
-##Requirements
+## Requirements
 
-- npm (https://docs.npmjs.com/getting-started/installing-node)
+* npm (https://docs.npmjs.com/getting-started/installing-node)
 
-- Installed server hosting documentation's exported data
+* Installed server hosting documentation's exported data. End point keys should be : 
+  * key/subkey values for the account : 'fr.techad.edc.showcase.mailreader', 'leftmenu.account'
+  * key/subkey values for the email-tab : 'fr.techad.edc.showcase.mailreader', 'email.tab'
+  
+* edc-help-ng2 running
 
-- edc-help-ng2 running
+## Building:
 
-##Launching: 
+  * With npm : 
+  
+```bash
+$ npm build
+```
+  * With yarn 
+  
+```bash
+$ yarn build
+```
 
-1)Install dependencies : 
+## Launching: 
 
-  With npm : 
+#### Install dependencies : 
+
+* With npm : 
   
 ```bash
 $ npm install
 ```
-  With yarn 
+* With yarn :
   
 ```bash
 $ yarn install
 ```
 
-2)Run the project : 
+#### Run the project : 
 
-  With npm : 
+* With npm : 
   
 ```bash
 $ npm start
 ```
 
-  With yarn 
+* With yarn :
   
 ```bash
 $ yarn start
 ```
 
-3)The application should be running at http://localhost:4201
+* If you want to run the prod version : 
+ 
+```bash
+$ npm start -prod --aot
+```
 
-##License
+#### The application should be running at http://localhost:4201
+
+## License
 MIT [TECH'advantage](mailto:contact@tech-advantage.com)

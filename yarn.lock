@@ -1425,9 +1425,9 @@ ecc-jsbn@~0.1.1:
   dependencies:
     jsbn "~0.1.0"
 
-"edc-popover-ng@git+https://github.com/tech-advantage/edc-popover-ng#507c37f9969cac27da5671504b179d503aa1d474":
-  version "0.1.0"
-  resolved "git+https://github.com/tech-advantage/edc-popover-ng#507c37f9969cac27da5671504b179d503aa1d474"
+edc-popover-ng@1.0.2-1:
+  version "1.0.2-1"
+  resolved "https://registry.yarnpkg.com/edc-popover-ng/-/edc-popover-ng-1.0.2-1.tgz#cd73bab0f98ee5d3481ff87cd984a5ae3cd4e8ad"
   dependencies:
     "@angular/common" "^2.4.0"
     "@angular/core" "^2.4.0"

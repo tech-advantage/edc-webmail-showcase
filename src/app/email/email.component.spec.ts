@@ -7,7 +7,6 @@ import { Observable } from 'rxjs/Observable';
 import { EmailService } from './email.service';
 import { Email } from './email';
 import { CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
-import 'rxjs/add/observable/of';
 
 describe('EmailComponent', () => {
   let component: EmailComponent;

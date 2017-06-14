@@ -12,6 +12,8 @@ import { TreeComponent } from './left-sidebar/tree/tree.component';
 import { HelpModule } from 'edc-popover-ng';
 import { EmailService } from './email/email.service';
 import { TreeElementComponent } from './left-sidebar/tree/tree-element/tree-element.component';
+import 'rxjs/add/observable/of';
+import 'rxjs/add/operator/switchMap';
 
 @NgModule({
   declarations: [

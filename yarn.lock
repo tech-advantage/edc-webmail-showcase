@@ -2,10 +2,6 @@
 # yarn lockfile v1
 
 
-"@angular/animations@4.0.3":
-  version "4.0.3"
-  resolved "https://registry.yarnpkg.com/@angular/animations/-/animations-4.0.3.tgz#42bb7d0c767137aaca777d27244f4c042d02641b"
-
 "@angular/cli@1.1.1":
   version "1.1.1"
   resolved "https://registry.yarnpkg.com/@angular/cli/-/cli-1.1.1.tgz#ee5cf7637ad859c08e8a5e7a7f2161d0e74ce7a5"
@@ -74,19 +70,11 @@
   version "4.0.3"
   resolved "https://registry.yarnpkg.com/@angular/common/-/common-4.0.3.tgz#17472895eb425f2812b3a79162b5b494d2506a5b"
 
-"@angular/compiler-cli@4.0.3":
+"@angular/compiler-cli@4.0.3", "@angular/compiler-cli@^4.0.0-rc.1":
   version "4.0.3"
   resolved "https://registry.yarnpkg.com/@angular/compiler-cli/-/compiler-cli-4.0.3.tgz#691f280bc4d6611a88d6555f43e57032a0d34300"
   dependencies:
     "@angular/tsc-wrapped" "4.0.3"
-    minimist "^1.2.0"
-    reflect-metadata "^0.1.2"
-
-"@angular/compiler-cli@^4.0.0-rc.1":
-  version "4.2.2"
-  resolved "https://registry.yarnpkg.com/@angular/compiler-cli/-/compiler-cli-4.2.2.tgz#bc5fa52e34000b678a3c8189ffe2da5fc0017501"
-  dependencies:
-    "@angular/tsc-wrapped" "4.2.2"
     minimist "^1.2.0"
     reflect-metadata "^0.1.2"
 
@@ -121,12 +109,6 @@
 "@angular/tsc-wrapped@4.0.3":
   version "4.0.3"
   resolved "https://registry.yarnpkg.com/@angular/tsc-wrapped/-/tsc-wrapped-4.0.3.tgz#a5fea6a87df9c348faa5577c3698c8a363082781"
-  dependencies:
-    tsickle "^0.21.0"
-
-"@angular/tsc-wrapped@4.2.2":
-  version "4.2.2"
-  resolved "https://registry.yarnpkg.com/@angular/tsc-wrapped/-/tsc-wrapped-4.2.2.tgz#094da1514849a0847f9cb5184e0ceb16fc194457"
   dependencies:
     tsickle "^0.21.0"
 

@@ -1,7 +1,7 @@
 import { find } from 'lodash';
 import { Injectable } from '@angular/core';
 import { Email } from './email';
-import { Observable } from 'rxjs';
+import { Observable } from 'rxjs/Observable';
 import { EmailsData } from './emails-data';
 
 @Injectable()

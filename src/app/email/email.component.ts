@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { EmailService } from './email.service';
 import { Email } from './email';
+import 'rxjs/add/operator/switchMap';
 
 @Component({
   selector: 'app-email',

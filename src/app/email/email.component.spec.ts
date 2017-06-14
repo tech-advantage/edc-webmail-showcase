@@ -3,10 +3,11 @@ import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 import { EmailComponent } from './email.component';
 import { ActivatedRoute } from '@angular/router';
 import { mockServices } from '../utils/test-helper';
-import { Observable } from 'rxjs';
+import { Observable } from 'rxjs/Observable';
 import { EmailService } from './email.service';
 import { Email } from './email';
 import { CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
+import 'rxjs/add/observable/of';
 
 describe('EmailComponent', () => {
   let component: EmailComponent;

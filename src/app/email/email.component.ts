@@ -11,6 +11,7 @@ import { Email } from './email';
 export class EmailComponent implements OnInit {
 
   email: Email;
+
   constructor(
     private route: ActivatedRoute,
     private emailService: EmailService

@@ -8,9 +8,10 @@ import { LeftSidebarComponent } from './left-sidebar/left-sidebar.component';
 import { InfoPageComponent } from './info-page/info-page.component';
 import { EmailComponent } from './email/email.component';
 import { TreeComponent } from './left-sidebar/tree/tree.component';
-import { HelpModule } from 'edc-popover-ng';
 import { EmailService } from './email/email.service';
 import { TreeElementComponent } from './left-sidebar/tree/tree-element/tree-element.component';
+import { HelpModule, PopoverConfigurationHandler } from 'edc-popover-ng';
+import { PopoverConfigHandler } from 'app/utils/popover-config-handler';
 import 'rxjs/add/observable/of';
 import 'rxjs/add/operator/switchMap';
 
@@ -29,8 +30,7 @@ import 'rxjs/add/operator/switchMap';
     HttpModule,
     AppRoutingModule,
     HelpModule.forRoot({
-      helpPath: '/help',
-      docPath: '/doc'
+      configLoader: {provide: PopoverConfigurationHandler, useClass: PopoverConfigHandler}
     })
   ],
   providers: [

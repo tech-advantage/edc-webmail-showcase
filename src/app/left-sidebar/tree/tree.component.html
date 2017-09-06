@@ -1,6 +1,6 @@
-<div class="account-container" *ngFor="let item of treeContent; let i = index" (click)="collapse(i)">
+<div class="account-container" *ngFor="let item of treeContent; let i = index" >
   <div class="account-items">
-    <div class="account-title-content">
+    <div class="account-title-content" (click)="collapse(i)">
       <i class="account-icon" [ngClass]="getTitleCaretIcon(i)"></i>
       <i class="account-icon-folder" [ngClass]="getTitleFolderIcon(i)"></i>
       <span>{{ item.name }}</span>

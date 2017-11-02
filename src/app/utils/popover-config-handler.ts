@@ -4,6 +4,10 @@ import { PopoverConfigurationHandler } from 'edc-popover-ng';
 @Injectable()
 export class PopoverConfigHandler implements PopoverConfigurationHandler {
 
+  getPluginId(): string {
+    return 'webmailmain'
+  }
+
   getHelpPath(): string {
     return '/help';
   }

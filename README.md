@@ -4,7 +4,7 @@ Web application example for edc integration
 
 ## edc Version
 
-Current edc-webmail-showcase release targets edc v2.2.0
+Current edc-webmail-showcase release is compatible with edc v2.2+
 
 ## Requirements
 

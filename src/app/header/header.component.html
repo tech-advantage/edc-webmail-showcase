@@ -15,14 +15,18 @@
   </div>
   <div class="header-bar">
     <div class="logo">
-    <i><img class="logo-img" src="assets/logo_WebMailDemo.png" /></i>
+      <i><img class="logo-img" src="assets/logo_WebMailDemo.png"/></i>
+      <edc-help class="account-help"
+                [key]="'fr.techad.edc.showcase.mailreader'"
+                [subKey]="'leftmenu.account'"
+                [placement]="'bottom'"
+                [dark]="true" [lang]="'fr'"></edc-help>
     </div>
     <div class="bar-icons">
-      <i class="fa fa-user-circle bar-user-icon"></i>
-      <i class="fa fa-cogs bar-user-icon"></i>
       <i class="fa fa-address-book-o bar-user-icon"></i>
       <i class="fa fa-calendar-o bar-user-icon"></i>
-      <!--i> <edc-help [key]="'fr.techad.edc.showcase.mailreader'" [subKey]="'menu'" [placement]="'bottom'" class="account-help" [dark]="true"></edc-help></i-->
+      <i class="fa fa-cogs bar-user-icon"></i>
+      <i class="fa fa-user-circle bar-user-icon"></i>
     </div>
   </div>
 </div>

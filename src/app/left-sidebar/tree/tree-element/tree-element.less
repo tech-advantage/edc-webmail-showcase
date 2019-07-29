@@ -3,10 +3,10 @@
 :host{
 
   .account-item {
+    display: flex;
+    align-items: baseline;
     color: white;
-    padding-left: 38px;
-    padding-top: 8px;
-    padding-bottom: 8px;
+    padding: 8px 0 8px 35px;
     font-size: 15px;
     cursor: pointer;
 
@@ -18,9 +18,11 @@
       background-color: lighten(@appprimary, 10%);;
     }
     .account-icon-refresh {
-      padding-right: 10px;
-      padding-top: 3px;
-      float: right;
+      margin-left: auto;
+      margin-right: 8px;
+    }
+    .account-icon-inbox {
+      padding: 0 5px 0 2px;
     }
   }
 }

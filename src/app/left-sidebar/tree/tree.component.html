@@ -5,7 +5,11 @@
       <i class="account-icon-folder" [ngClass]="getTitleFolderIcon(i)"></i>
       <span>{{ item.name }}</span>
     </div>
-    <edc-help [key]="'fr.techad.edc.showcase.mailreader'" [subKey]="'leftmenu.account'" [placement]="'bottom'" class="account-help" [dark]="true"></edc-help>
+    <edc-help class="account-help"
+              [key]="'fr.techad.edc.showcase.mailreader'"
+              [subKey]="'leftmenu.account'"
+              [placement]="'bottom'"
+              [dark]="true"></edc-help>
   </div>
   <app-tree-element [treeItem]="item" (selectedElement)="selectedElement($event)"></app-tree-element>
 </div>

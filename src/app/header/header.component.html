@@ -10,7 +10,7 @@
     <edc-help class="help-component help-title"
               [pluginId]="'webmail2'"
               [key]="'fr.techad.edc.showcase.external'"
-              [subKey]="'external.header'">
+              [subKey]="'external.header'" [lang]="lang">
     </edc-help>
   </div>
   <div class="header-bar">
@@ -20,7 +20,7 @@
                 [key]="'fr.techad.edc.showcase.mailreader'"
                 [subKey]="'leftmenu.account'"
                 [placement]="'bottom'"
-                [dark]="true" [lang]="'fr'"></edc-help>
+                [dark]="true" [lang]="lang"></edc-help>
     </div>
     <div class="bar-icons">
       <i class="fa fa-address-book-o bar-user-icon"></i>
@@ -29,4 +29,11 @@
       <i class="fa fa-user-circle bar-user-icon"></i>
     </div>
   </div>
+  <select id="lang" class="form-group" [(ngModel)]="lang" (ngModelChange)="onLangChange($event)">
+    <option *ngFor="let language of languages"
+            [value]="language"
+            [ngClass]="{'translation-defined': isTranslationDefined(language)}">
+      {{ language | uppercase }}
+    </option>
+  </select>
 </div>

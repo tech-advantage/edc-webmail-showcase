@@ -1,6 +1,6 @@
 {
   "name": "edc-web-mail-ng2",
-  "version": "3.0.0-beta-0",
+  "version": "3.0.0-beta-4",
   "license": "MIT",
   "scripts": {
     "ng": "ng",
@@ -20,10 +20,11 @@
     "@angular/platform-browser": "7.2.15",
     "@angular/platform-browser-dynamic": "7.2.15",
     "@angular/router": "7.2.15",
+    "@ngx-translate/core": "11.0.0",
     "@angular/animations": "7.2.15",
     "bootstrap": "4.3.1",
     "core-js": "2.4.1",
-    "edc-popover-ng": "3.0.0-beta-0",
+    "edc-popover-ng": "3.0.0-beta-4",
     "font-awesome": "4.7.0",
     "lodash": "4.17.15",
     "rxjs": "~6.5.2",

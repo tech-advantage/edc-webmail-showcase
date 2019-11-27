@@ -226,6 +226,13 @@
     tree-kill "1.2.1"
     webpack-sources "1.3.0"
 
+"@ngx-translate/core@11.0.0":
+  version "11.0.0"
+  resolved "https://registry.yarnpkg.com/@ngx-translate/core/-/core-11.0.0.tgz#700675ee276a9f567760218b8e43e276479ebdce"
+  integrity sha512-wCeHhDqrkt1h8gApyzxEQcDLGJ/LcihNMmk0BPT3BMn/4R+pDoBEG2ZyjcYpj1Wt36zBCXONTSzBD9vPclfWzQ==
+  dependencies:
+    tslib "^1.9.0"
+
 "@ngx-translate/core@11.0.1":
   version "11.0.1"
   resolved "https://registry.yarnpkg.com/@ngx-translate/core/-/core-11.0.1.tgz#cecefad41f06368f5859dac48fec8fcc4485615f"
@@ -2181,22 +2188,23 @@ ecc-jsbn@~0.1.1:
     jsbn "~0.1.0"
     safer-buffer "^2.1.0"
 
-edc-client-js@3.0.0-beta-0:
-  version "3.0.0-beta-0"
-  resolved "https://registry.yarnpkg.com/edc-client-js/-/edc-client-js-3.0.0-beta-0.tgz#fef71a18a51b2820c442e6cc382014d637b01173"
-  integrity sha512-xIYQ5I2yqEFp8LmCwoGUR79ip+JDaNh253YE74fUFRVTL13dBkrcaVRQr0OqeJH/t+7NoHuR/GS0Zm5TJNk+Hw==
+edc-client-js@^3.0.0-beta-4:
+  version "3.0.0-beta-4"
+  resolved "https://registry.yarnpkg.com/edc-client-js/-/edc-client-js-3.0.0-beta-4.tgz#f308f579e91dbbc481812a69003916c2a977ad3b"
+  integrity sha512-V70bccvbVA+5U5p8EXGa8tbw0+zUkY5Z/G6jrQU6wGX4B0I7jOkpY+aA8/CL61eoalzHaoqASlockxJ8cUy7HQ==
   dependencies:
     axios "0.19.0"
     es6-promise "4.2.8"
     lodash "4.17.15"
 
-edc-popover-ng@3.0.0-beta-0:
-  version "3.0.0-beta-0"
-  resolved "https://registry.yarnpkg.com/edc-popover-ng/-/edc-popover-ng-3.0.0-beta-0.tgz#024716548634730fd789015655121d37b96891bd"
-  integrity sha512-7oJQHjq67dHsoiiPDq6rXOKq4rh5yNtHfvz0caGVFFoJ1SBd/rIccjIla2TvVdRL/54X0kp914nrPAwNcSwCQQ==
+edc-popover-ng@3.0.0-beta-4:
+  version "3.0.0-beta-4"
+  resolved "https://registry.yarnpkg.com/edc-popover-ng/-/edc-popover-ng-3.0.0-beta-4.tgz#c0339126f5f7479aecce95e2dd79ed9cb7ebd2fc"
+  integrity sha512-TzQxpyoDIQw/2OAGlr6c/GdZxmrBfGXB9b7vHz54DMToXVKRM8mT20EXpE4QjREXlKm/yS7OLwcxDfQ4OpvU5w==
   dependencies:
     "@ngx-translate/core" "11.0.1"
-    edc-client-js "3.0.0-beta-0"
+    edc-client-js "^3.0.0-beta-4"
+    es6-promise "^4.2.8"
     font-awesome "4.7.0"
     ngx-bootstrap "3.0.1"
     rxjs "~6.5.2"
@@ -2324,7 +2332,7 @@ error-ex@^1.2.0, error-ex@^1.3.1:
   dependencies:
     is-arrayish "^0.2.1"
 
-es6-promise@4.2.8, es6-promise@^4.0.3:
+es6-promise@4.2.8, es6-promise@^4.0.3, es6-promise@^4.2.8:
   version "4.2.8"
   resolved "https://registry.yarnpkg.com/es6-promise/-/es6-promise-4.2.8.tgz#4eb21594c972bc40553d276e510539143db53e0a"
   integrity sha512-HJDGx5daxeIvxdBxvG2cb9g4tEvwIk3i8+nhX0yGrYmZUzbkdg8QbDevheDB8gd0//uPj4c1EQua8Q+MViT0/w==

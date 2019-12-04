@@ -2188,22 +2188,22 @@ ecc-jsbn@~0.1.1:
     jsbn "~0.1.0"
     safer-buffer "^2.1.0"
 
-edc-client-js@^3.0.0-beta-4:
-  version "3.0.0-beta-4"
-  resolved "https://registry.yarnpkg.com/edc-client-js/-/edc-client-js-3.0.0-beta-4.tgz#f308f579e91dbbc481812a69003916c2a977ad3b"
-  integrity sha512-V70bccvbVA+5U5p8EXGa8tbw0+zUkY5Z/G6jrQU6wGX4B0I7jOkpY+aA8/CL61eoalzHaoqASlockxJ8cUy7HQ==
+edc-client-js@^3.0.0-beta-5:
+  version "3.0.0-beta-5"
+  resolved "https://registry.yarnpkg.com/edc-client-js/-/edc-client-js-3.0.0-beta-5.tgz#8103c6a5ec8890ef1b21c7db10397684d96da44c"
+  integrity sha512-Cz+gc0Q1SU1uzJkNw0EbM2iWDkzO71i+D+de1WmhpOrr6yKQH8I2qweL8yFyWzaIobf856xrQ0yEHXBz11JpYg==
   dependencies:
     axios "0.19.0"
     es6-promise "4.2.8"
     lodash "4.17.15"
 
-edc-popover-ng@3.0.0-beta-4:
-  version "3.0.0-beta-4"
-  resolved "https://registry.yarnpkg.com/edc-popover-ng/-/edc-popover-ng-3.0.0-beta-4.tgz#c0339126f5f7479aecce95e2dd79ed9cb7ebd2fc"
-  integrity sha512-TzQxpyoDIQw/2OAGlr6c/GdZxmrBfGXB9b7vHz54DMToXVKRM8mT20EXpE4QjREXlKm/yS7OLwcxDfQ4OpvU5w==
+edc-popover-ng@3.0.0-beta-6:
+  version "3.0.0-beta-6"
+  resolved "https://registry.yarnpkg.com/edc-popover-ng/-/edc-popover-ng-3.0.0-beta-6.tgz#bb94a9b732e224880c0b19eb3bb83fd789020acf"
+  integrity sha512-A4tW7YEl765qC79FTT1M0MhMg25VRt5cS9TWtnKY8QsUd0mJXjI0Ah2krXnjOXs0JZLPbvQSJpa2BnDpZyl37Q==
   dependencies:
     "@ngx-translate/core" "11.0.1"
-    edc-client-js "^3.0.0-beta-4"
+    edc-client-js "^3.0.0-beta-5"
     es6-promise "^4.2.8"
     font-awesome "4.7.0"
     ngx-bootstrap "3.0.1"

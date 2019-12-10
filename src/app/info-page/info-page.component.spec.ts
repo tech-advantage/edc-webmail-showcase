@@ -1,6 +1,7 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { InfoPageComponent } from './info-page.component';
+import { FakeTranslatePipe } from '../utils/test-helper';
 
 describe('InfoPageComponent', () => {
   let component: InfoPageComponent;
@@ -8,7 +9,7 @@ describe('InfoPageComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ InfoPageComponent ]
+      declarations: [ FakeTranslatePipe, InfoPageComponent ]
     })
     .compileComponents();
   }));

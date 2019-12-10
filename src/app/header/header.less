@@ -12,46 +12,53 @@
     font-weight: 700;
     height: 60px;
 
+    select {
+      width: 60px;
+      height: 100%;
+    }
+
     .header-title {
       padding: 15px 0 18px 30px;
       width: 250px;
       background-color: @appprimary;
 
-      .help-title{
+      .help-title {
         padding-left: 5px;
       }
     }
 
-    .header-bar{
+    .header-bar {
       display: flex;
       flex-grow: 1;
       justify-content: space-between;
-      background-color:#efc271;
+      background-color: #efc271;
 
       .logo {
-        vertical-align: middle;
-        display: inline-block;
-        height: 100%;
+        display: flex;
+        align-items: center;
 
         .logo-img {
-         padding-left: 1em;
-         max-height: 60px;
+          padding-left: 1em;
+          padding-right: 1em;
+          max-height: 60px;
         }
       }
 
-      .bar-icons{
-
+      .bar-icons {
         padding-right: 10px;
-        padding-top: 5px;
         margin-left: auto;
+        display: flex;
+        align-items: center;
 
-        .bar-user-icon{
+        .bar-user-icon {
           cursor: pointer;
           padding: 5px 35px 5px 35px;
-          float: right;
           font-size: 24px;
         }
       }
     }
+  }
+  .translation-defined {
+    background-color: #efc271;
   }
 }

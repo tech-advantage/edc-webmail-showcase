@@ -52,8 +52,6 @@
     "no-switch-case-fall-through": true,
     "no-trailing-whitespace": true,
     "no-unused-expression": true,
-    "no-unused-variable": true,
-    "no-use-before-declare": true,
     "no-var-keyword": true,
     "object-literal-sort-keys": false,
     "one-line": [
@@ -86,7 +84,6 @@
         "variable-declaration": "nospace"
       }
     ],
-    "typeof-compare": true,
     "unified-signatures": true,
     "variable-name": false,
     "whitespace": [
@@ -112,6 +109,6 @@
     "no-access-missing-member": true,
     "templates-use-public": true,
     "invoke-injectable": true,
-    "import-blacklist": [true, "rxjs"]
+    "import-blacklist": [true]
   }
 }

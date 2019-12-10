@@ -6,9 +6,7 @@ import 'zone.js/dist/sync-test';
 import 'zone.js/dist/jasmine-patch';
 import 'zone.js/dist/async-test';
 import 'zone.js/dist/fake-async-test';
-import 'rxjs/Observable';
-import 'rxjs/add/observable/of';
-import 'rxjs/add/operator/switchMap';
+import 'rxjs';
 
 import { getTestBed } from '@angular/core/testing';
 import {

@@ -23,4 +23,8 @@ export class PopoverConfigHandler implements PopoverConfigurationHandler {
   isAppendToBody(): boolean {
     return true;
   }
+
+  getI18nPath(): string {
+    return '';
+  }
 }

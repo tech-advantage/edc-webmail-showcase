@@ -1,7 +1,8 @@
 import { find } from 'lodash';
+import { Observable, of, throwError } from 'rxjs';
+
 import { Injectable } from '@angular/core';
 import { Email } from './email';
-import { Observable } from 'rxjs/Observable';
 import { EmailsData } from './emails-data';
 
 @Injectable()
@@ -12,11 +13,11 @@ export class EmailService {
   getEmail(accountName: string, id: number): Observable<Email> {
     const mails = find(this.emails.eMailsList, {account: accountName});
     if (mails) {
-      const mail = find(mails.emails, {id: id});
+      const mail = find(mails.emails, {id});
       if (mail) {
-        return Observable.of(mail);
+        return of(mail);
       } else {
-        return Observable.throw('Email not found');
+        return throwError('Email not found');
       }
     }
   }

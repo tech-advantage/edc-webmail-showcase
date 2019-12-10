@@ -2188,26 +2188,26 @@ ecc-jsbn@~0.1.1:
     jsbn "~0.1.0"
     safer-buffer "^2.1.0"
 
-edc-client-js@^3.0.0-beta-5:
-  version "3.0.0-beta-5"
-  resolved "https://registry.yarnpkg.com/edc-client-js/-/edc-client-js-3.0.0-beta-5.tgz#8103c6a5ec8890ef1b21c7db10397684d96da44c"
-  integrity sha512-Cz+gc0Q1SU1uzJkNw0EbM2iWDkzO71i+D+de1WmhpOrr6yKQH8I2qweL8yFyWzaIobf856xrQ0yEHXBz11JpYg==
+edc-client-js@3.0.1:
+  version "3.0.1"
+  resolved "https://registry.yarnpkg.com/edc-client-js/-/edc-client-js-3.0.1.tgz#f9a0dcadb2762d6685470dd6a01e869c4d2f59d0"
+  integrity sha512-A+BYY/Gy2leF/kIMi7vcyXN1tP8w8TCftcIHnot96367/5uz0Ot5BT1J6fsW06NqK9bzgA/8Gf2/VzyrA85q1A==
   dependencies:
     axios "0.19.0"
     es6-promise "4.2.8"
     lodash "4.17.15"
 
-edc-popover-ng@3.0.0-beta-6:
-  version "3.0.0-beta-6"
-  resolved "https://registry.yarnpkg.com/edc-popover-ng/-/edc-popover-ng-3.0.0-beta-6.tgz#bb94a9b732e224880c0b19eb3bb83fd789020acf"
-  integrity sha512-A4tW7YEl765qC79FTT1M0MhMg25VRt5cS9TWtnKY8QsUd0mJXjI0Ah2krXnjOXs0JZLPbvQSJpa2BnDpZyl37Q==
+edc-popover-ng@3.0.0:
+  version "3.0.0"
+  resolved "https://registry.yarnpkg.com/edc-popover-ng/-/edc-popover-ng-3.0.0.tgz#e4480b239d6ebada018730f9b7e5d903d355d7d4"
+  integrity sha512-0ZxEwI7M2IxuPw6Xd+WI5dOj9cv+VYYqeHt6TQ3yxZwUp2iABqQ6FxvRTXHL75RkNpmx9DiXU+PNmUNrXt/IMQ==
   dependencies:
     "@ngx-translate/core" "11.0.1"
-    edc-client-js "^3.0.0-beta-5"
-    es6-promise "^4.2.8"
+    edc-client-js "3.0.1"
+    es6-promise "4.2.8"
     font-awesome "4.7.0"
     ngx-bootstrap "3.0.1"
-    rxjs "~6.5.2"
+    rxjs "6.5.2"
     tslib "^1.9.0"
 
 ee-first@1.1.1:
@@ -2332,7 +2332,7 @@ error-ex@^1.2.0, error-ex@^1.3.1:
   dependencies:
     is-arrayish "^0.2.1"
 
-es6-promise@4.2.8, es6-promise@^4.0.3, es6-promise@^4.2.8:
+es6-promise@4.2.8, es6-promise@^4.0.3:
   version "4.2.8"
   resolved "https://registry.yarnpkg.com/es6-promise/-/es6-promise-4.2.8.tgz#4eb21594c972bc40553d276e510539143db53e0a"
   integrity sha512-HJDGx5daxeIvxdBxvG2cb9g4tEvwIk3i8+nhX0yGrYmZUzbkdg8QbDevheDB8gd0//uPj4c1EQua8Q+MViT0/w==
@@ -5954,7 +5954,7 @@ rxjs@6.3.3:
   dependencies:
     tslib "^1.9.0"
 
-rxjs@^6.1.0, rxjs@~6.5.2:
+rxjs@6.5.2, rxjs@^6.1.0, rxjs@~6.5.2:
   version "6.5.2"
   resolved "https://registry.yarnpkg.com/rxjs/-/rxjs-6.5.2.tgz#2e35ce815cd46d84d02a209fb4e5921e051dbec7"
   integrity sha512-HUb7j3kvb7p7eCUHE3FqjoDsC1xfZQ4AHFWfTKSpZ+sAhhz5X1WX0ZuUqWbzB2QhSLp3DoLUG+hMdEDKqWo2Zg==

@@ -12,33 +12,32 @@
     "e2e": "ng e2e"
   },
   "dependencies": {
-    "@angular/animations": "7.2.15",
-    "@angular/common": "7.2.15",
-    "@angular/compiler": "7.2.15",
-    "@angular/core": "7.2.15",
-    "@angular/forms": "7.2.15",
-    "@angular/http": "7.2.15",
-    "@angular/platform-browser": "7.2.15",
-    "@angular/platform-browser-dynamic": "7.2.15",
-    "@angular/router": "7.2.15",
+    "@angular/animations": "8.2.14",
+    "@angular/common": "8.2.14",
+    "@angular/compiler": "8.2.14",
+    "@angular/core": "8.2.14",
+    "@angular/forms": "8.2.14",
+    "@angular/platform-browser": "8.2.14",
+    "@angular/platform-browser-dynamic": "8.2.14",
+    "@angular/router": "8.2.14",
     "@ngx-translate/core": "11.0.0",
     "bootstrap": "4.3.1",
     "core-js": "2.4.1",
     "edc-popover-ng": "3.0.0",
     "font-awesome": "4.7.0",
     "lodash": "4.17.15",
-    "rxjs": "6.5.2",
+    "rxjs": "6.6.3",
     "tslib": "1.9.0",
-    "zone.js": "0.8.26"
+    "zone.js": "~0.9.1"
   },
   "devDependencies": {
-    "@angular-devkit/build-angular": "0.13.0",
-    "@angular/cli": "7.3.9",
-    "@angular/compiler-cli": "7.2.15",
+    "@angular-devkit/build-angular": "~0.803.29",
+    "@angular/cli": "8.3.29",
+    "@angular/compiler-cli": "8.2.14",
     "@types/jasmine": "2.5.53",
     "@types/lodash": "4.14.136",
     "@types/node": "12.6.8",
-    "codelyzer": "3.1.1",
+    "codelyzer": "^5.0.1",
     "jasmine-core": "2.6.2",
     "jasmine-spec-reporter": "4.1.0",
     "karma": "1.7.0",
@@ -51,6 +50,6 @@
     "reflect-metadata": "0.1.12",
     "ts-node": "8.3.0",
     "tslint": "5.18.0",
-    "typescript": "3.2.4"
+    "typescript": "3.5.3"
   }
 }

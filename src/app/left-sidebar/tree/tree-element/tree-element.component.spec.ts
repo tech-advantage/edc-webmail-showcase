@@ -1,5 +1,5 @@
-import {ComponentFixture, TestBed, async} from '@angular/core/testing';
-import {NO_ERRORS_SCHEMA} from '@angular/core';
+import { ComponentFixture, TestBed } from '@angular/core/testing';
+import { NO_ERRORS_SCHEMA } from '@angular/core';
 import { TreeElementComponent } from './tree-element.component';
 import { TreeItem } from '../tree-item';
 import { TreeElementName } from './tree-element-name';
@@ -10,13 +10,13 @@ describe('TreeElementComponent', () => {
   let selectedElement: string;
   let fixture: ComponentFixture<TreeElementComponent>;
 
-  beforeEach(async(() => {
+  beforeEach(() => {
     TestBed.configureTestingModule({
       declarations: [ TreeElementComponent ],
       schemas: [NO_ERRORS_SCHEMA]
     })
       .compileComponents();
-  }));
+  });
 
   beforeEach(() => {
     fixture = TestBed.createComponent(TreeElementComponent);

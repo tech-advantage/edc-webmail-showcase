@@ -1,4 +1,4 @@
-import { async, ComponentFixture, TestBed } from '@angular/core/testing';
+import { ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { LeftSidebarComponent } from './left-sidebar.component';
 import { TreeComponent } from './tree/tree.component';
@@ -8,13 +8,13 @@ describe('LeftSidebarComponent', () => {
   let component: LeftSidebarComponent;
   let fixture: ComponentFixture<LeftSidebarComponent>;
 
-  beforeEach(async(() => {
+  beforeEach(() => {
     TestBed.configureTestingModule({
       declarations: [ LeftSidebarComponent, TreeComponent ],
       schemas: [NO_ERRORS_SCHEMA]
     })
     .compileComponents();
-  }));
+  });
 
   beforeEach(() => {
     fixture = TestBed.createComponent(LeftSidebarComponent);

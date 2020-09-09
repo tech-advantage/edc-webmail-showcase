@@ -1,8 +1,7 @@
-import { get, forEach } from 'lodash';
 import { Component } from '@angular/core';
 import { localAccounts } from '../../email/emails-data';
-import {TreeItemIcon, TreeItem} from './tree-item';
-import {TreeElementName} from './tree-element/tree-element-name';
+import { TreeItem, TreeItemIcon } from './tree-item';
+import { TreeElementName } from './tree-element/tree-element-name';
 
 @Component({
   selector: 'app-tree',
@@ -36,9 +35,12 @@ export class TreeComponent {
     }
   }
 
-  selectedElement(treeItem: TreeItem) {
-    forEach(this.treeContent, (content: TreeItem) => {
-      if (get(content, 'name') !== get(treeItem, 'name')) {
+  selectedElement(treeItem: TreeItem): void {
+    if (!this.treeContent || !this.treeContent.length) {
+      return;
+    }
+    this.treeContent.forEach((content: TreeItem) => {
+      if (content && content.name !== (treeItem && treeItem.name)) {
         content.$selectedChild = '';
       }
     });

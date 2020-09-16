@@ -1,5 +1,6 @@
 export enum TreeElementName {
-  NAME_INBOX = <any> 'Inbox',
-  NAME_DRAFTS = <any> 'Drafts',
-  NAME_TRASH = <any> 'Trash'
+  NONE = '',
+  NAME_INBOX = 'Inbox',
+  NAME_DRAFTS = 'Drafts',
+  NAME_TRASH = 'Trash'
 }

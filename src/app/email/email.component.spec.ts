@@ -7,6 +7,7 @@ import { mockServices } from '../utils/test-helper';
 import { EmailService } from './email.service';
 import { Email } from './email';
 import { CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
+import { TranslateService } from '@ngx-translate/core';
 
 describe('EmailComponent', () => {
   let component: EmailComponent;
@@ -22,6 +23,7 @@ describe('EmailComponent', () => {
       providers: [
         mockServices(ActivatedRoute),
         mockServices(EmailService, ['getEmail']),
+        mockServices(TranslateService),
       ],
       schemas: [CUSTOM_ELEMENTS_SCHEMA]
     });

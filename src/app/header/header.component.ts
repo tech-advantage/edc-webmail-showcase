@@ -10,7 +10,7 @@ import { TranslateService } from '@ngx-translate/core';
 export class HeaderComponent {
   lang = 'en';
   languages = LANGUAGE_CODES;
-  private readonly definedTranslations = ['en', 'fr', 'ru', 'vi', 'zh'];
+  private readonly definedTranslations = ['en', 'fr'];
 
   constructor(private readonly translateService: TranslateService) { }
 

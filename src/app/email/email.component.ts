@@ -5,6 +5,7 @@ import {Component, OnInit} from '@angular/core';
 import {ActivatedRoute} from '@angular/router';
 import {EmailService} from './email.service';
 import {Email} from './email';
+import { TranslateService } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-email',
@@ -17,7 +18,8 @@ export class EmailComponent implements OnInit {
 
   constructor(
     private route: ActivatedRoute,
-    private emailService: EmailService
+    private emailService: EmailService,
+    private readonly translateService: TranslateService
   ) {}
 
   ngOnInit() {
@@ -35,5 +37,9 @@ export class EmailComponent implements OnInit {
       ).subscribe((email: Email) => this.email = email);
     }
 
+  }
+
+  getLang(): string {
+    return this.translateService.currentLang;
   }
 }

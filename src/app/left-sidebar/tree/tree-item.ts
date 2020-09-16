@@ -6,7 +6,7 @@ export class TreeItem {
     public name: string,
     public elements: TreeElementName[],
     public collapsed = true,
-    public $selectedChild = ''
+    public $selectedChild: TreeElementName = TreeElementName.NONE
   ) {}
 }
 

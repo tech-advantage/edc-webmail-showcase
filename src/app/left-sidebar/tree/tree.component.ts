@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { localAccounts } from '../../email/emails-data';
 import { TreeItem, TreeItemIcon } from './tree-item';
 import { TreeElementName } from './tree-element/tree-element-name';
+import { TranslateService } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-tree',
@@ -14,6 +15,9 @@ export class TreeComponent {
     new TreeItem(localAccounts[0], [TreeElementName.NAME_INBOX, TreeElementName.NAME_DRAFTS, TreeElementName.NAME_TRASH]),
     new TreeItem(localAccounts[1], [TreeElementName.NAME_INBOX, TreeElementName.NAME_DRAFTS])
   ];
+
+  constructor(private readonly translateService: TranslateService) {
+  }
 
   collapse(index: number) {
     this.treeContent[ index ].collapsed = !this.treeContent[ index ].collapsed;
@@ -41,9 +45,13 @@ export class TreeComponent {
     }
     this.treeContent.forEach((content: TreeItem) => {
       if (content && content.name !== (treeItem && treeItem.name)) {
-        content.$selectedChild = '';
+        content.$selectedChild = TreeElementName.NONE;
       }
     });
+  }
+
+  getLang(): string {
+    return this.translateService.currentLang;
   }
 
 }

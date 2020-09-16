@@ -8,8 +8,7 @@
     <edc-help class="account-help"
               [mainKey]="'fr.techad.edc.showcase.mailreader'"
               [subKey]="'leftmenu.account'"
-              [placement]="'bottom'"
-              [dark]="true"></edc-help>
+              [lang]="getLang()"></edc-help>
   </div>
   <app-tree-element [treeItem]="item" (selectedElement)="selectedElement($event)"></app-tree-element>
 </div>

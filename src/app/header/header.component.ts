@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { LANGUAGE_CODES } from 'edc-popover-ng';
+import { IconBehavior, LANGUAGE_CODES, PopoverBehavior } from 'edc-popover-ng';
 import { TranslateService } from '@ngx-translate/core';
 
 @Component({
@@ -10,6 +10,10 @@ import { TranslateService } from '@ngx-translate/core';
 export class HeaderComponent {
   lang = 'en';
   languages = LANGUAGE_CODES;
+  failBehavior = {
+    icon: IconBehavior,
+    popover: PopoverBehavior
+  };
   private readonly definedTranslations = ['en', 'fr'];
 
   constructor(private readonly translateService: TranslateService) { }

@@ -11,7 +11,7 @@ notifications:
   email: false
 
 node_js:
-  - '7'
+  - '12'
 
 branches:
   except:

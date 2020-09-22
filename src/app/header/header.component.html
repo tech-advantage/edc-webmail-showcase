@@ -23,8 +23,8 @@
 <!--      <i><img class="logo-img" src="assets/logo_WebMailDemo.png"/></i>-->
       <edc-help class="account-help"
                 [mainKey]="'fr.techad.edc.showcase.mailreader'"
-                [subKey]="'leftmenu.account'"
-                [options]="{ placement: 'right-end', dark: true }"
+                [subKey]="'wrong-sub-key'"
+                [options]="{ placement: 'right-end', dark: true, failBehavior: { icon: failBehavior.icon.ERROR, popover: failBehavior.popover.ERROR_SHOWN } }"
                 [lang]="lang"></edc-help>
     </div>
     <div class="bar-icons">

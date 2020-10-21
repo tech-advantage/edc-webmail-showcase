@@ -14,7 +14,7 @@ Current edc-webmail-showcase release is compatible with edc v3.0+
   * key/subkey values for the account : 'fr.techad.edc.showcase.mailreader', 'leftmenu.account'
   * key/subkey values for the email-tab : 'fr.techad.edc.showcase.mailreader', 'email.tab'
   
-* edc-help-ng2 running
+* [edc-help-viewer](https://github.com/tech-advantage/edc-help-viewer) running
 
 ## Building:
 
@@ -64,7 +64,7 @@ $ yarn start
 $ npm start -prod --aot
 ```
 
-#### The application should be running at http://localhost:4201
+#### The application should be running at http://localhost:4201/email
 
 ## License
 MIT [TECH'advantage](mailto:contact@tech-advantage.com)

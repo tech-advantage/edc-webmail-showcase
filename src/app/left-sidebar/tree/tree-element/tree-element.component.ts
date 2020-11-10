@@ -1,5 +1,6 @@
 import {Component, EventEmitter, Input, Output} from '@angular/core';
 import {TreeItem} from '../tree-item';
+import { TreeElementName } from './tree-element-name';
 
 
 @Component({
@@ -12,14 +13,14 @@ export class TreeElementComponent {
   @Input() treeItem: TreeItem;
   @Output() selectedElement = new EventEmitter<TreeItem>();
 
-  selectElement(parent: TreeItem, elementName: string) {
+  selectElement(parent: TreeItem, elementName: TreeElementName) {
     if (parent) {
       parent.$selectedChild = elementName;
       this.selectedElement.emit(parent);
     }
   }
 
-  isElementSelected(parent: TreeItem, elementName: string) {
+  isElementSelected(parent: TreeItem, elementName: TreeElementName) {
     return !!parent && !!elementName && parent.$selectedChild === elementName;
   }
 }

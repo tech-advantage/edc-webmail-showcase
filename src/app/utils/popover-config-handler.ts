@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { PopoverConfigurationHandler } from 'edc-popover-ng';
+import { AnimationType, IEdcPopoverOptions, PopoverConfigurationHandler } from 'edc-popover-ng';
 
 @Injectable()
 export class PopoverConfigHandler implements PopoverConfigurationHandler {
@@ -16,12 +16,10 @@ export class PopoverConfigHandler implements PopoverConfigurationHandler {
     return '/doc';
   }
 
-  getIcon() {
-    return 'fa-question-circle-o';
-  }
-
-  isAppendToBody(): boolean {
-    return true;
+  getPopoverOptions(): IEdcPopoverOptions {
+    return {
+      animation: AnimationType.PERSPECTIVE_EXTREME
+    };
   }
 
   getI18nPath(): string {

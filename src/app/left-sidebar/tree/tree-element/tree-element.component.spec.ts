@@ -1,5 +1,5 @@
-import {ComponentFixture, TestBed, async} from '@angular/core/testing';
-import {NO_ERRORS_SCHEMA} from '@angular/core';
+import { ComponentFixture, TestBed } from '@angular/core/testing';
+import { NO_ERRORS_SCHEMA } from '@angular/core';
 import { TreeElementComponent } from './tree-element.component';
 import { TreeItem } from '../tree-item';
 import { TreeElementName } from './tree-element-name';
@@ -7,16 +7,16 @@ import { TreeElementName } from './tree-element-name';
 describe('TreeElementComponent', () => {
   let component: TreeElementComponent;
   let treeItem: TreeItem;
-  let selectedElement: string;
+  let selectedElement: TreeElementName;
   let fixture: ComponentFixture<TreeElementComponent>;
 
-  beforeEach(async(() => {
+  beforeEach(() => {
     TestBed.configureTestingModule({
       declarations: [ TreeElementComponent ],
       schemas: [NO_ERRORS_SCHEMA]
     })
       .compileComponents();
-  }));
+  });
 
   beforeEach(() => {
     fixture = TestBed.createComponent(TreeElementComponent);
@@ -27,7 +27,7 @@ describe('TreeElementComponent', () => {
   beforeEach(() => {
     treeItem = new TreeItem('myEmail@abc.com', [TreeElementName.NAME_INBOX, TreeElementName.NAME_DRAFTS, TreeElementName.NAME_TRASH]);
     component.treeItem = treeItem;
-    selectedElement = TreeElementName.NAME_INBOX.toString();
+    selectedElement = TreeElementName.NAME_INBOX;
   });
 
   it('should create', () => {
@@ -40,7 +40,7 @@ describe('TreeElementComponent', () => {
     beforeEach(() => {
       treeItem = new TreeItem('myEmail@abc.com', [TreeElementName.NAME_INBOX, TreeElementName.NAME_DRAFTS, TreeElementName.NAME_TRASH]);
       component.treeItem = treeItem;
-      selectedElement = TreeElementName.NAME_INBOX.toString();
+      selectedElement = TreeElementName.NAME_INBOX;
     });
 
     describe('selectElement()', () => {
@@ -48,7 +48,7 @@ describe('TreeElementComponent', () => {
       beforeEach(() => {
         treeItem = new TreeItem('myEmail@abc.com', [TreeElementName.NAME_INBOX, TreeElementName.NAME_DRAFTS, TreeElementName.NAME_TRASH]);
         component.treeItem = treeItem;
-        selectedElement = TreeElementName.NAME_INBOX.toString();
+        selectedElement = TreeElementName.NAME_INBOX;
       });
 
       it('should set the selected element value to tree item $selectedChild attribute', () => {
@@ -57,7 +57,7 @@ describe('TreeElementComponent', () => {
 
         component.selectElement(treeItem, selectedElement);
 
-        expect(component.treeItem.$selectedChild).toEqual(TreeElementName.NAME_INBOX.toString());
+        expect(component.treeItem.$selectedChild).toEqual(TreeElementName.NAME_INBOX);
         expect(component.selectedElement.emit).toHaveBeenCalledWith(treeItem);
       });
     });
@@ -67,7 +67,7 @@ describe('TreeElementComponent', () => {
       beforeEach(() => {
         treeItem = new TreeItem('myEmail@abc.com', [TreeElementName.NAME_INBOX, TreeElementName.NAME_DRAFTS, TreeElementName.NAME_TRASH]);
         component.treeItem = treeItem;
-        selectedElement = TreeElementName.NAME_INBOX.toString();
+        selectedElement = TreeElementName.NAME_INBOX;
       });
 
       it('should return true if element is selected', () => {
@@ -81,7 +81,7 @@ describe('TreeElementComponent', () => {
       it('should return false if element is selected', () => {
         component.treeItem.$selectedChild = selectedElement;
 
-        const selected = component.isElementSelected(treeItem, TreeElementName.NAME_DRAFTS.toString());
+        const selected = component.isElementSelected(treeItem, TreeElementName.NAME_DRAFTS);
 
         expect(selected).toBeFalsy();
       });

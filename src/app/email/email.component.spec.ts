@@ -1,12 +1,13 @@
 import { of } from 'rxjs';
 
-import { async, ComponentFixture, TestBed } from '@angular/core/testing';
+import { ComponentFixture, TestBed } from '@angular/core/testing';
 import { EmailComponent } from './email.component';
 import { ActivatedRoute } from '@angular/router';
 import { mockServices } from '../utils/test-helper';
 import { EmailService } from './email.service';
 import { Email } from './email';
 import { CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
+import { TranslateService } from '@ngx-translate/core';
 
 describe('EmailComponent', () => {
   let component: EmailComponent;
@@ -16,29 +17,30 @@ describe('EmailComponent', () => {
 
   let email: Email;
 
-  beforeEach(async(() => {
+  beforeEach(() => {
     TestBed.configureTestingModule({
       declarations: [ EmailComponent ],
       providers: [
         mockServices(ActivatedRoute),
         mockServices(EmailService, ['getEmail']),
+        mockServices(TranslateService),
       ],
       schemas: [CUSTOM_ELEMENTS_SCHEMA]
     });
-  }));
-
-  beforeEach(() => {
-    activatedRoute = TestBed.get(ActivatedRoute);
-    emailService = TestBed.get(EmailService);
   });
 
-  beforeEach(async(() => {
+  beforeEach(() => {
+    activatedRoute = TestBed.inject<ActivatedRoute>(ActivatedRoute);
+    emailService = TestBed.inject<EmailService>(EmailService);
+  });
+
+  beforeEach(() => {
     email = new Email(1, 'le_sujet', ['sender@mail.com'], '10032017', 'mon_contenu');
     //
     activatedRoute.params = of({account: 'myAccount', emailId: '0'});
     spyOn(emailService, 'getEmail').and.returnValue(of(email));
 
-  }));
+  });
 
   beforeEach(() => {
     fixture = TestBed.createComponent(EmailComponent);
@@ -46,7 +48,7 @@ describe('EmailComponent', () => {
     fixture.detectChanges();
   });
 
-  it('should create', async(() => {
+  it('should create', () => {
     expect(component).toBeTruthy();
-  }));
+  });
 });

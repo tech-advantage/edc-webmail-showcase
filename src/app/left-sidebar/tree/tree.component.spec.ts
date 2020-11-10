@@ -1,19 +1,24 @@
-import {TreeComponent} from './tree.component';
-import {ComponentFixture, TestBed, async} from '@angular/core/testing';
-import {NO_ERRORS_SCHEMA} from '@angular/core';
-import {TreeItemIcon} from './tree-item';
+import { TreeComponent } from './tree.component';
+import { ComponentFixture, TestBed } from '@angular/core/testing';
+import { NO_ERRORS_SCHEMA } from '@angular/core';
+import { TreeItemIcon } from './tree-item';
+import { mockServices } from '../../utils/test-helper';
+import { TranslateService } from '@ngx-translate/core';
 
 describe('TreeComponent', () => {
   let component: TreeComponent;
   let fixture: ComponentFixture<TreeComponent>;
 
-  beforeEach(async(() => {
+  beforeEach(() => {
     TestBed.configureTestingModule({
       declarations: [TreeComponent],
+      providers: [
+        mockServices(TranslateService)
+      ],
       schemas: [NO_ERRORS_SCHEMA]
     })
       .compileComponents();
-  }));
+  });
 
   beforeEach(() => {
     fixture = TestBed.createComponent(TreeComponent);

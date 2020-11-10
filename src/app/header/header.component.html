@@ -9,18 +9,23 @@
     -->
     <edc-help class="help-component help-title"
               [pluginId]="'webmail2'"
-              [key]="'fr.techad.edc.showcase.external'"
+              [mainKey]="'fr.techad.edc.showcase.external'"
               [subKey]="'external.header'" [lang]="lang">
     </edc-help>
   </div>
   <div class="header-bar">
     <div class="logo">
-      <i><img class="logo-img" src="assets/logo_WebMailDemo.png"/></i>
-      <edc-help class="account-help"
-                [key]="'fr.techad.edc.showcase.mailreader'"
+      <edc-help class="logo-img"
+                [mainKey]="'fr.techad.edc.showcase.mailreader'"
                 [subKey]="'leftmenu.account'"
-                [placement]="'bottom'"
-                [dark]="true" [lang]="lang"></edc-help>
+                [options]="{ trigger: 'mouseenter', delay: [200, 300], icon: { url: 'assets/logo_WebMailDemo.png', height: 50, width: 93 } }"
+                [lang]="lang"></edc-help>
+<!--      <i><img class="logo-img" src="assets/logo_WebMailDemo.png"/></i>-->
+      <edc-help class="account-help"
+                [mainKey]="'fr.techad.edc.showcase.mailreader'"
+                [subKey]="'wrong-sub-key'"
+                [options]="{ placement: 'right-end', dark: true, failBehavior: { icon: failBehavior.icon.ERROR, popover: failBehavior.popover.ERROR_SHOWN } }"
+                [lang]="lang"></edc-help>
     </div>
     <div class="bar-icons">
       <i class="fa fa-address-book-o bar-user-icon"></i>

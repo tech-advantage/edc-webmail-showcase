@@ -5,7 +5,7 @@ import { AnimationType, IEdcPopoverOptions, PopoverConfigurationHandler } from '
 export class PopoverConfigHandler implements PopoverConfigurationHandler {
 
   getPluginId(): string {
-    return 'webmailmain'
+    return 'webmailmain';
   }
 
   getHelpPath(): string {

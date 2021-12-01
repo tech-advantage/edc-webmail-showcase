@@ -7,20 +7,21 @@ import { EmailsData } from './emails-data';
 @Injectable()
 export class EmailService {
 
-  emails = new EmailsData();
+  emailData: EmailsData = new EmailsData();
 
-  getEmail(accountName: string, id: number): Observable<Email | void> {
-    if (!this.emails || !this.emails.eMailsList || !this.emails.eMailsList.length) {
+  getEmail(accountName: string, id: number): Observable<Email | never> {
+    if (!this.emailData || !this.emailData.eMailsList || !this.emailData.eMailsList.length) {
       return EMPTY;
     }
-    const mails = this.emails.eMailsList.find(mail => mail.account === accountName);
+    const mails = this.emailData.eMailsList.find(mail => mail.account === accountName);
     if (mails && mails.emails && mails.emails.length) {
       const mail = mails.emails.find(m => m.id === id);
       if (mail) {
         return of(mail);
       } else {
-        return throwError('Email not found');
+        return throwError(() => Error('Email not found'));
       }
     }
+    return EMPTY;
   }
 }

@@ -1,10 +1,10 @@
-import {catchError, switchMap} from 'rxjs/operators';
+import { catchError, switchMap } from 'rxjs/operators';
 import { EMPTY } from 'rxjs';
 
-import {Component, OnInit} from '@angular/core';
-import {ActivatedRoute} from '@angular/router';
-import {EmailService} from './email.service';
-import {Email} from './email';
+import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
+import { EmailService } from './email.service';
+import { Email } from './email';
 import { TranslateService } from '@ngx-translate/core';
 
 @Component({
@@ -14,7 +14,7 @@ import { TranslateService } from '@ngx-translate/core';
 })
 export class EmailComponent implements OnInit {
 
-  email: Email;
+  email: Email | undefined;
 
   constructor(
     private route: ActivatedRoute,
@@ -22,11 +22,11 @@ export class EmailComponent implements OnInit {
     private readonly translateService: TranslateService
   ) {}
 
-  ngOnInit() {
+  ngOnInit(): void {
     if (this.route.params) {
       this.route.params.pipe(
         switchMap(params => {
-          const emailId = +params['emailId'] + 1; // (+) converts string parameter to a number
+          const emailId = +params['emailId'] + 1;
           const account = params['account'];
           return this.emailService.getEmail(account, emailId);
         }),
@@ -36,7 +36,6 @@ export class EmailComponent implements OnInit {
         })
       ).subscribe((email: Email) => this.email = email);
     }
-
   }
 
   getLang(): string {

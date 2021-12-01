@@ -2,6 +2,11 @@ import { Email } from './email';
 
 export const localAccounts = ['help@edc.com', 'news@edc.com'];
 
+export interface UserEmails {
+  account: string;
+  emails: Email[];
+}
+
 export class EmailsData {
   eMail1 = new Email(1, 'EDC features', [ 'helper@edc.com' ], '12:15',
     `Create a brick in a blast, and integrate it to your project.
@@ -26,7 +31,7 @@ With users at the center of our product strategy, we believe help should be cont
    content and map it to articles.
    Add images, links, video, plus a whole lot more. Content is delivered directly to your software in a few simple steps. `);
 
-  eMailsList = [
+  eMailsList: UserEmails[] = [
     {
       account: localAccounts[0],
       emails: [

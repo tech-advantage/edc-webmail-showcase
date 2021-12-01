@@ -10,17 +10,17 @@ import { TreeElementName } from './tree-element-name';
 })
 export class TreeElementComponent {
 
-  @Input() treeItem: TreeItem;
+  @Input() treeItem: TreeItem | undefined;
   @Output() selectedElement = new EventEmitter<TreeItem>();
 
-  selectElement(parent: TreeItem, elementName: TreeElementName) {
+  selectElement(parent: TreeItem, elementName: TreeElementName): void {
     if (parent) {
       parent.$selectedChild = elementName;
       this.selectedElement.emit(parent);
     }
   }
 
-  isElementSelected(parent: TreeItem, elementName: TreeElementName) {
+  isElementSelected(parent: TreeItem, elementName: TreeElementName): boolean {
     return !!parent && !!elementName && parent.$selectedChild === elementName;
   }
 }
